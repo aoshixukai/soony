@@ -4,7 +4,7 @@ var loader = require('./src/bin/loader.js')
 var path = require('path');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-global.config=require('./config.js')
+global.config = require('./config.js')
 
 console.log(config);
 
@@ -14,7 +14,7 @@ loader.ini(express(), function(app) {
     console.log(path.join(__dirname, 'public'));
     /*app.use(express.static(path.join(__dirname, 'public')));*/
     // 静态资源
-    
+    console.log('==============git修改测试======================');
     app.use('/', routes);
     app.use('/users', users);
 
