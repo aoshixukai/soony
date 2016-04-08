@@ -1,0 +1,1 @@
+Unit.iniAnalysis('codecheck');

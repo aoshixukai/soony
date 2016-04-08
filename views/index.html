@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    
+</head>
+
+<body>
+    <div id="codecheck"></div>
+    <ul>
+        {{each data}}
+        <li>
+            <div><strong> {{$index}}</strong></div>
+            <div><span><strong>line:</strong>{{$value.error.line}}</span></div>
+            <div><span><strong>character:</strong>{{$value.error.character}}</span></div>
+            <div><span><strong>evidence:</strong>{{$value.error.evidence}}</span></div>
+            <div>
+                <span><strong>reason:</strong>{{$value.error.reason}}</span>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</body>
+
+</html>
